@@ -48,7 +48,7 @@ function generateMiniToc(divId) {
     let headers = null;
     if(divId) {
         $('#minitoc').empty().append('<h2>In this section</h2>');
-        headers = $('#' + divId).find('h3');
+        headers = $('#' + divId).find(':header');
     }
     else {
         $('#minitoc').empty().append('<h2>In this document</h2>');
